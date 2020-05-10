@@ -4,190 +4,21 @@
         <meta charset="utf-8" />
         <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"/>
         
+        <link href="css/master.css" rel="stylesheet">
         
-        <style>
-            .container{
-                display: grid;
-                grid-template-columns: 300px 300px;
-                grid-template-rows: 60px 700px auto 80px;
-                grid-template-areas: 
-                "hd hd hd hd hd hd hd hd"
-                "bb bb bb bb bb bb bb bb"
-                "main main main main main main main main"
-                "ft ft ft ft ft ft ft ft";
-            }
-            .header{
-                grid-area:hd;
-                display:flex;
-                flex-direction: row;
-                align-items: flex-start;
-                justify-content: center;
-                background-color: #000000;
-                box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
-            }
-
-            .headermenu{
-                /*This drives the menu option im the header*/
-                width: 100px;
-                height: 20px;
-                /*margin: 5px 5px;*/
-                /*padding: 8px 8px;*/
-                color:white;
-                font-family: 'Roboto', sans-serif;
-                /*border:1px solid red;*/
-            }
-
-            .header h2{
-                text-align: center;
-            }
-
-            /* Banner Related CSS to be moved */
-            .banner{
-                grid-area:bb;
-                background-image: url("images/atlanta.JPG");
-                background-size: cover;
-                background-attachment: fixed;
-                
-            }
-
-            .banner h1{
-                text-align: center;
-                font-size: 50px;
-                margin: 300px 0;
-                color: white;
-                -webkit-text-stroke-width: 1px; 
-                -webkit-text-stroke-color: black;
-                font-family: 'Roboto', sans-serif;
-            }
-
-            .banner h3{
-                text-align: left;
-                font-size:12px;
-                margin: 200px;
-                color: white;
-                font-family: 'Roboto', sans-serif;
-            }
-
-
-
-            .topbar{
-                grid-area:tb;
-                display:flex;
-                flex-direction: row;
-                align-items: center;
-                justify-content: center;
-
-            }
-
-            .topcourse{
-                width: 60px;
-                height: 15px;
-                margin: 5px;
-                padding: 8px 0;
-                text-align:center;
-
-                -moz-border-radius: 4px;
-                -webkit-border-radius: 4px;
-                border-radius: 4px;
-                -moz-box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
-                -webkit-box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
-                box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
-                color: rgba(0,0,0,.87);
-                margin: 8px;
-                min-width: 60px;
-                overflow: hidden;
-                position: relative;
-            }            
-
-            .topcourse h3{
-                font-family: 'Roboto', sans-serif;
-            }
-
-
-            /* All of the footer related CSS to be moved later on*/
-            .footer{
-                grid-area:ft;
-                padding: 10px 10px;
-                display:flex;
-                flex-direction: row;
-                background-color: #000000;
-                box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
-            }
-
-            .socialmedia {
-                margin: 10px 10px;
-            }
-
-            .logo{
-                width:40px;
-            }
-
-            .footer h3{
-                font-family: 'Roboto', sans-serif;
-                font-size: 14pt;
-                margin: 15pt;
-                color:white;
-            }
-
-            
-            /* BodyCSS to be moved later on*/
-            .content{
-                grid-area:main;
-                display:flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-            }
-
-            .blogpost{
-                /*Referenced Material Design from: https://www.zeolearn.com/magazine/how-to-easily-create-modern-material-design-cards-with-html-and-css*/
-                -moz-border-radius: 4px;
-                -webkit-border-radius: 4px;
-                border-radius: 4px;
-                -moz-box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
-                -webkit-box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
-                box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
-                color: rgba(0,0,0,.87);
-                margin: 8px;
-                min-width: 290px;
-                overflow: hidden;
-                position: relative;
-
-                width: 550px;
-                height: 80px;
-
-                background: #ffffff;
-                padding: 10px;
-                text-align: center;
-                display: flex;
-            }
-
-            .blogpost img {
-                width:80px;
-                height:80px;
-            }
-
-            .blogpost h4 {
-                margin: 25px 0px 0px 30px;
-                font-family: 'Roboto';
-                font-size:18px
-            }
-
-
-        </style>
     </head>
 
     <body>
         <div class = "container">
             <div class="header"> 
                 <div class="headermenu">
-                    <h2>Home</h2>
+                    <h2> <a href=index.html> Home </a></h2>
                 </div>
                 <div class="headermenu">
-                    <h2>About</h2>
+                    <h2> <a href=index.html#about> About </a></h2>
                 </div>
                 <div class="headermenu">
-                    <h2>Blog</h2>
+                    <h2> <a href=index.html#blogposts> Blog </a></h2>
                 </div>
 
             </div>
@@ -198,48 +29,73 @@
                 Photo by David S. Park</h3>
             </div>
         
+            <div class="about"  id="about">
+                <h1> About </h1>
+
+                <div class="aboutdetails">
+                    <img  id="degree" src="images/course_image/park-david.jpg" alt="mscs_gatech_pptslide"> </br>                    
+                    <h4>Masters of Science in Computer Science</h4>
+                    <div class="abouttext">
+                        <h5> Hi, my name is David Park! I got my Masters of Science in Computer Science from Georgia Tech in May 2020.</br></br>
+                            My concentration is in Machine Learning, however I took courses from each of the other specialization such as Computing Systems, Robotics and Perception, and Interactive Intelligence for a well rounded CS education. </br></br>
+                            
+                            During my time at Georgia Tech, I worked on a 8803 special problems project along with 3 other team members to perform independent research. Our paper was accepted at an ACM conference, where we will be presenting our research in August 2020.
+                            I also had the pleasure to work as a part time graduate teaching assistant for one of the Machine Learning specialization courses. I am proud to continue supporting the program as an Instructional Associate for the Summer 2020 semester. </br></br>
+
+                            Have I mentioned that this was all done part time while working? The OMSCS program allows motivated stuents to pursue their graudate education while pursuing their full time jobs and or other family responsibilities. 
+                            I am proud to part take in this transformative effort that enables a quality graduate level education to those around the world. </br> </br>
+
+                            This blog is dedicated to sharing my experiences during my OMSCS journey. I will be leaving my thoughts on the courses I took, and also share tips and guidelines who maybe embarking on their MSCS journey.
+                        </h5>
+                    </div>
+                </div>
+
+            </div>
             
-            <div class="content">
+            <div class="content" id="blogposts">
+                <h1> Blog Posts </h1>
+
+        
                 <div class="blogpost">
                     <img  class ="courseimage" src="images/course_image/gios.png" alt="GIOS logo">
-                    <h4>CS6200: Graduate Intro to Operating Systems</h4>
+                    <h4><a href="gios.html">CS6200: Graduate Intro to Operating Systems</h4>
                 </div>
                 <div class="blogpost">
                     <img  class ="courseimage" src="images/course_image/cn.png" alt="Computer Network Logo">
-                    <h4>CS6250: Computer Networks</h4>
+                    <h4><a href="cn.html">CS6250: Computer Networks</a></h4>
                 </div>
                 <div class="blogpost">
                     <img  class ="courseimage" src="images/course_image/rl.png" alt="Computer Network Logo">
-                    <h4>CS7642: Reinforcement Learning</h4>
+                    <h4><a href="rl.html">CS7642: Reinforcement Learning</a></h4>
                 </div>
                 <div class="blogpost">
                     <img  class ="courseimage" src="images/course_image/ml4t.png" alt="Computer Network Logo">
-                    <h4>CS7646: Machine Learning for Trading</h4>
+                    <h4><a href="ml4t.html">CS7646: Machine Learning for Trading</a></h4>
                 </div>
                 <div class="blogpost">
                     <img  class ="courseimage" src="images/course_image/ml.png" alt="Computer Network Logo">
-                    <h4>CS7641: Machine Learning</h4>
+                    <h4><a href="ml.html">CS7641: Machine Learning</a></h4>
                 </div>
                 <div class="blogpost">
                     <img  class ="courseimage" src="images/course_image/dva.png" alt="Computer Network Logo">
-                    <h4>CSE6242: Data and Visual Analytics</h4>
+                    <h4><a href="dva.html">CSE6242: Data and Visual Analytics</a></h4>
                 </div>
                 <div class="blogpost">
                     <img  class ="courseimage" src="images/course_image/ga.png" alt="Computer Network Logo">
-                    <h4>CS6515: Graduate Algorithms</h4>
+                    <h4><a href="ga.html">CS6515: Graduate Algorithms</a></h4>
                 </div>
                 <div class="blogpost">
                     <img  class ="courseimage" src="images/course_image/hci.png" alt="Computer Network Logo">
-                    <h4>CS6750: Human Computer Interaction</h4>
+                    <h4><a href="hci.html">CS6750: Human Computer Interaction</a></h4>
                 </div>
                 <div class="blogpost">
                     <img  class ="courseimage" src="images/course_image/ai4r.png" alt="Computer Network Logo">
-                    <h4>CS7638: Artificial Intelligence for Robotics</h4>
+                    <h4><a href="ai4r.html">CS7638: Artificial Intelligence for Robotics</a></h4>
                 </div>
 
                 <div class="blogpost">
                     <img  class ="courseimage" src="images/course_image/8803.png" alt="Computer Network Logo">
-                    <h4>CS8803: Special Problems</h4>
+                    <h4><a href="8803.html">CS8803: Special Problems</a></h4>
                 </div>
 
                 
@@ -247,22 +103,17 @@
 
             <div class="footer">
                 <h3>Created by David Sejin Park. You can also find me on: </h3>
-
-
                 <div class="socialmedia"> 
-                    <img class ="logo" src="images/facebook_logo.png" alt="Facebook Logo">
+                    <a href= https://facebook.com><img class ="logo" src="images/facebook_logo.png" alt="Facebook Logo"></a>
                 </div>
-
                 <div class="socialmedia"> 
-                    <img  class ="logo" src="images/instagram_logo.png" alt="Instagram Logo">
+                    <a href= https://instagram.com><img  class ="logo" src="images/instagram_logo.png" alt="Instagram Logo"></a>
                 </div>
-
                 <div class="socialmedia"> 
-                    <img  class ="logo" src="images/Twitter_Social_Icon_Rounded_Square_Color.png" alt="Twitter Logo">
+                    <a href= https://twitter.com><img  class ="logo" src="images/Twitter_Social_Icon_Rounded_Square_Color.png" alt="Twitter Logo"></a>
                 </div>
-
                 <div class="socialmedia"> 
-                    <img  class ="logo" src="images/linkedin_logo.png" alt="LinkedIn Logo">
+                    <a href= https://www.linkedin.com/in/davidsejinpark><img  class ="logo" src="images/linkedin_logo.png" alt="LinkedIn Logo"></a>
                 </div>
             </div>
           </div>
