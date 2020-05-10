@@ -1,0 +1,226 @@
+<html>
+    <head>
+        <title> My Georgia Tech Journey </title>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"/>
+        
+        <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+        <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+        <style>
+            .container{
+                display: grid;
+                grid-template-columns: 300px 300px;
+                grid-template-rows: 80px 50px 500px auto 100px;
+                grid-template-areas: 
+                "hd hd hd hd hd hd hd hd"
+                "tb tb tb tb tb tb tb tb"
+                "bb bb bb bb bb bb bb bb"
+                "main main main main main main main main"
+                "ft ft ft ft ft ft ft ft";
+                border: 2px solid yellow;
+            }
+            .header{
+                grid-area:hd;
+                display:flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .headermenu{
+                border: 2px solid green;
+                width: 60px;
+                height: 15px;
+                margin: 5px;
+                padding: 8px 0;
+                text-align:center;
+            }
+
+            .header h3{
+                text-align: center;
+            }
+
+            .banner{
+                grid-area:bb;
+                background-image: url("images/atlanta.JPG");
+                background-size: cover;
+                background-attachment: fixed;
+                
+            }
+
+            .banner h1{
+                text-align: center;
+                font-size: 50px;
+                margin: 200px 0;
+                color: white;
+                -webkit-text-stroke-width: 1px; 
+                -webkit-text-stroke-color: black;
+                font-family: 'Roboto', sans-serif;
+            }
+
+            .banner h3{
+                text-align: left;
+                font-size:12px;
+                margin: 200px;
+                color: white;
+                font-family: 'Roboto', sans-serif;
+            }
+
+
+
+            .topbar{
+                grid-area:tb;
+                display:flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+
+            }
+
+            .topcourse{
+                border: 2px solid green;
+                width: 60px;
+                height: 15px;
+                margin: 5px;
+                padding: 8px 0;
+                text-align:center;
+            }            
+
+
+
+            .footer{
+                grid-area:ft;
+                padding: 10px 10px;
+            }
+            
+            
+            .content{
+                grid-area:main;
+                display:flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            .box{
+                border: 1px solid red;
+                background: rgb(255, 255, 255);
+            }
+            .blogpost{
+                border: 2px solid blue;
+                width: 550px;
+                height: 40px;
+                margin: 10px;
+                background: #F8FA9D;
+
+                padding: 10px;
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class = "container">
+            <div class="header box"> 
+                <div class="headermenu">
+                    Home
+                </div>
+                <div class="headermenu">
+                    About
+                </div>
+                <div class="headermenu">
+                    Courses
+                </div>
+                <div class="headermenu">
+                    Blog
+                </div>
+
+            </div>
+
+            <div class="banner">
+                <h1>My OMSCS Journey</h1>
+                <h3>Georgia Instutite of Technology. Atlanta, GA </br>
+                Photo by David S. Park</h3>
+            </div>
+
+            <div class = "topbar box">
+                <div class="topcourse">
+                    <a href=ml.html>ML</a>
+                </div>
+                <div class="topcourse">
+                    RL
+                </div>
+                <div class="topcourse">
+                    ML4T
+                </div>
+
+                <div class="topcourse">
+                    DVA
+                </div>
+
+                <div class="topcourse">
+                    GA
+                </div>
+
+                <div class="topcourse">
+                    AI4R
+                </div>
+
+                <div class="topcourse">
+                    HCI
+                </div>
+
+                <div class="topcourse">
+                    CN
+                </div>
+
+                <div class="topcourse">
+                    OS
+                </div>
+
+                <div class="topcourse">
+                    8803
+                </div>
+
+            </div>
+
+
+            
+            
+            <div class="content box">
+                <div class="blogpost">
+                    My OMSCS Journey Overview
+                </div>
+                <div class="blogpost">
+                    Teaching Assistants
+                </div>
+                <div class="blogpost">
+                    8803 Special Problems
+                </div>
+                <div class="blogpost">
+                    Specialization
+                </div>
+                <div class="blogpost">
+                    Choosing Courses
+                </div>
+                <div class="blogpost">
+                    Pairing Courses
+                </div>
+                <div class="blogpost">
+                    Registration
+                </div>
+                <div class="blogpost">
+                    How to Survive in Algorithms
+                </div>
+                <div class="blogpost">
+                    How to Survive in Machine Learning
+                </div>
+
+                
+            </div>
+
+            <div class="footer box">A Journey towards Masters of Science in Computer Science. A blog by David Park.</div>
+          </div>
+    </body>
+</html>
