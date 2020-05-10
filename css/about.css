@@ -30,7 +30,14 @@
     padding: 10px;
     text-align: center;
     
+    
 }
+
+@media(min-width:900px) {
+    .aboutdetails{
+        width: 700px
+    }
+   }
 
 .abouttext{
     text-align: left;
