@@ -4,18 +4,14 @@
         <meta charset="utf-8" />
         <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"/>
         
-        <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
-        <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
+        
         <style>
             .container{
                 display: grid;
                 grid-template-columns: 300px 300px;
-                grid-template-rows: 60px 50px 500px auto 80px;
+                grid-template-rows: 60px 500px auto 80px;
                 grid-template-areas: 
                 "hd hd hd hd hd hd hd hd"
-                "tb tb tb tb tb tb tb tb"
                 "bb bb bb bb bb bb bb bb"
                 "main main main main main main main main"
                 "ft ft ft ft ft ft ft ft";
@@ -84,13 +80,28 @@
             }
 
             .topcourse{
-                border: 2px solid green;
                 width: 60px;
                 height: 15px;
                 margin: 5px;
                 padding: 8px 0;
                 text-align:center;
+
+                -moz-border-radius: 4px;
+                -webkit-border-radius: 4px;
+                border-radius: 4px;
+                -moz-box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+                -webkit-box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+                box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+                color: rgba(0,0,0,.87);
+                margin: 8px;
+                min-width: 60px;
+                overflow: hidden;
+                position: relative;
             }            
+
+            .topcourse h3{
+                font-family: 'Roboto', sans-serif;
+            }
 
 
             /* All of the footer related CSS to be moved later on*/
@@ -99,6 +110,8 @@
                 padding: 10px 10px;
                 display:flex;
                 flex-direction: row;
+                background-color: #000000;
+                box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
             }
 
             .socialmedia {
@@ -113,10 +126,11 @@
                 font-family: 'Roboto', sans-serif;
                 font-size: 14pt;
                 margin: 15pt;
+                color:white;
             }
 
             
-            /* General CSS to be moved later on*/
+            /* BodyCSS to be moved later on*/
             .content{
                 grid-area:main;
                 display:flex;
@@ -125,10 +139,6 @@
                 justify-content: center;
             }
 
-            .box{
-                border: 1px solid red;
-                background: rgb(255, 255, 255);
-            }
             .blogpost{
                 /*Referenced Material Design from: https://www.zeolearn.com/magazine/how-to-easily-create-modern-material-design-cards-with-html-and-css*/
                 -moz-border-radius: 4px;
@@ -187,50 +197,7 @@
                 <h3>Georgia Instutite of Technology. Atlanta, GA </br>
                 Photo by David S. Park</h3>
             </div>
-
-            <div class = "topbar">
-                <div class="topcourse">
-                    <a href=ml.html>ML</a>
-                </div>
-                <div class="topcourse">
-                    RL
-                </div>
-                <div class="topcourse">
-                    ML4T
-                </div>
-
-                <div class="topcourse">
-                    DVA
-                </div>
-
-                <div class="topcourse">
-                    GA
-                </div>
-
-                <div class="topcourse">
-                    AI4R
-                </div>
-
-                <div class="topcourse">
-                    HCI
-                </div>
-
-                <div class="topcourse">
-                    CN
-                </div>
-
-                <div class="topcourse">
-                    OS
-                </div>
-
-                <div class="topcourse">
-                    8803
-                </div>
-
-            </div>
-
-
-            
+        
             
             <div class="content">
                 <div class="blogpost">
@@ -270,10 +237,15 @@
                     <h4>CS7638: Artificial Intelligence for Robotics</h4>
                 </div>
 
+                <div class="blogpost">
+                    <img  class ="courseimage" src="images/course_image/8803.png" alt="Computer Network Logo">
+                    <h4>CS8803: Special Problems</h4>
+                </div>
+
                 
             </div>
 
-            <div class="footer box">
+            <div class="footer">
                 <h3>Created by David Sejin Park. You can also find me on: </h3>
 
 
