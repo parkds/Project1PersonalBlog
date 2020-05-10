@@ -11,24 +11,26 @@
 
     <body>
         <div class = "container">
-            <div class="header"> 
-                <div class="headermenu">
-                    <h2> <a href=index.html> Home </a></h2>
-                </div>
-                <div class="headermenu">
-                    <h2> <a href=index.html#about> About </a></h2>
-                </div>
-                <div class="headermenu">
-                    <h2> <a href=index.html#blogposts> Blog </a></h2>
-                </div>
+            <!-- Updating with using nav for the header to follow conventions-->
+            <nav class="header"  id = "nav-bar">
+                <ul id = "nav-list">
+                    <li class="headermenu" id="nav-item1">
+                        <a href=index.html> <h2>Home</h2> </a>
+                    </li>
+                    <li class="headermenu" id="nav-item2">
+                        <h2> <a href=index.html#about> About </a></h2>
+                    </li>
+                    <li class="headermenu" id="nav-item3">
+                        <h2> <a href=index.html#blogposts> Blog </a></h2>
+                    </li>
+                </ul> 
+            </nav>
 
-            </div>
-
-            <div class="banner">
+            <header class="banner">
                 <h1>My OMSCS Journey</h1>
                 <h3>Georgia Instutite of Technology. Atlanta, GA </br>
                 Photo by David S. Park</h3>
-            </div>
+                </header>
 
         
             <div class="about"  id="about">
@@ -64,7 +66,7 @@
                     <div class="blogpost">
                         <img  class ="courseimage" src="images/course_image/gios.png" alt="GIOS logo">
                         <h4><a href="gios.html">CS6200: Graduate Intro to Operating Systems</h4>
-                    </div>
+                        </div>
                     <div class="blogpost">
                         <img  class ="courseimage" src="images/course_image/cn.png" alt="Computer Network Logo">
                         <h4><a href="cn.html">CS6250: Computer Networks</a></h4>
@@ -105,7 +107,7 @@
                 </div>
             
 
-            <div class="footer">
+            <footer class="footer">
                 <h3>Created by David Sejin Park. You can also find me on: </h3>
                 <div class="socialmedia"> 
                     <a href= https://facebook.com><img class ="logo" src="images/facebook_logo.png" alt="Facebook Logo"></a>
@@ -119,7 +121,7 @@
                 <div class="socialmedia"> 
                     <a href= https://www.linkedin.com/in/davidsejinpark><img  class ="logo" src="images/linkedin_logo.png" alt="LinkedIn Logo"></a>
                 </div>
-            </div>
+            </footer>
           </div>
     </body>
 </html>
