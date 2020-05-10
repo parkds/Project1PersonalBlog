@@ -22,3 +22,9 @@
     margin: 15pt;
     color:white;
 }
+
+@media(max-width:500px) {
+    .footer h3{
+        font-size: 8pt;
+    }
+}

@@ -7,8 +7,8 @@
 
 .container{
     display: grid;
-    grid-template-columns: 300px 300px;
-    grid-template-rows: 60px 700px 800px auto 80px;
+    grid-template-columns: 0.5vw 0.5vw;
+    grid-template-rows: 60px 700px auto auto 80px;
     grid-template-areas: 
     "hd hd hd hd hd hd hd hd"
     "bb bb bb bb bb bb bb bb"
@@ -19,7 +19,7 @@
 
 #blogpage {
     display: grid;
-    grid-template-columns: 300px 300px;
+    grid-template-columns: 0.5vw 0.5vw;
     grid-template-rows: 60px 700px auto 80px;
     grid-template-areas: 
     "hd hd hd hd hd hd hd hd"
@@ -28,4 +28,4 @@
     "ft ft ft ft ft ft ft ft";
 }
 
-  
+

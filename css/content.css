@@ -8,6 +8,12 @@
     font-family: 'Roboto', sans-serif;
 }
 
+@media(max-width:500px) {
+    .content{
+        width: 100vw
+    }
+}
+
 .blogpost{
     /*Referenced Material Design from: https://www.zeolearn.com/magazine/how-to-easily-create-modern-material-design-cards-with-html-and-css*/
     -moz-border-radius: 4px;
@@ -18,7 +24,7 @@
     box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
     color: rgba(0,0,0,.87);
     margin: 8px;
-    min-width: 200px;
+    min-width: 100px;
     overflow: hidden;
     position: relative;
 
@@ -36,6 +42,12 @@
         width: 700px
     }
    }
+
+@media(max-width:500px) {
+    .blogpost{
+        width: 85vw
+    }
+}
 
 .blogpost img {
     width:80px;

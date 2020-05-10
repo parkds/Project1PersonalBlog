@@ -22,6 +22,12 @@
     
 }
 
+@media(max-width:500px) {
+    .blogtext{
+        width: 100vw
+    }
+}
+
 .return{
     background: #ffffff;
     font-family: 'Roboto', sans-serif;;
@@ -58,6 +64,13 @@
     background: #ffffff;
     padding: 10px;
     text-align: center;
+}
+
+
+@media(max-width:500px) {
+    .blogauthor{
+        width: 100vw
+    }
 }
 
 .blogauthortext {

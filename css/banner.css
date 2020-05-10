@@ -4,6 +4,8 @@
     background-image: url("../images/atlanta.JPG");
     background-size: cover;
     background-attachment: fixed;
+    max-width: 100%;
+    height: auto;
     
 }
 
@@ -23,4 +25,10 @@
     margin: 200px;
     color: white;
     font-family: 'Roboto', sans-serif;
+}
+
+@media(max-width:500px) {
+    .banner{
+        width: 100vw;
+    }
 }
