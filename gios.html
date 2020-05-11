@@ -10,19 +10,21 @@
     </head>
 
     <body>
-        <div class = "container" id="blogpage">
-            <div class="header"> 
-                <div class="headermenu">
-                    <h2> <a href=index.html> Home </a></h2>
-                </div>
-                <div class="headermenu">
-                    <h2> <a href=index.html#about> About </a></h2>
-                </div>
-                <div class="headermenu">
-                    <h2> <a href=index.html#blogposts> Blog </a></h2>
-                </div>
-
-            </div>
+        <main class = "container" id="blogpage">
+            <!-- Updating with using nav for the header to follow conventions-->
+            <nav class="header"  id = "nav-bar">
+                <ul id = "nav-list">
+                    <li class="headermenu" id="nav-item1">
+                        <a href=index.html> <h2>Home</h2> </a>
+                    </li>
+                    <li class="headermenu" id="nav-item2">
+                        <h2> <a href=index.html#about> About </a></h2>
+                    </li>
+                    <li class="headermenu" id="nav-item3">
+                        <h2> <a href=index.html#blogposts> Blog </a></h2>
+                    </li>
+                </ul> 
+            </nav>
 
             <div class="banner" id="blogpagebanner">
                 <h1>CS6200: Graduate Introduction to Operating Systems</h1>
@@ -77,7 +79,7 @@
                 
             </div>
 
-            <div class="footer">
+            <footer class="footer">
                 <h3>Created by David Sejin Park. You can also find me on: </h3>
                 <div class="socialmedia"> 
                     <a href= https://facebook.com><img class ="logo" src="images/facebook_logo.png" alt="Facebook Logo"></a>
@@ -91,7 +93,7 @@
                 <div class="socialmedia"> 
                     <a href= https://www.linkedin.com/in/davidsejinpark><img  class ="logo" src="images/linkedin_logo.png" alt="LinkedIn Logo"></a>
                 </div>
-            </div>
+            </footer>
           </div>
     </body>
 </html>
